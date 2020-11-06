@@ -209,11 +209,33 @@ Practice accessing data above by console.log-ing following items:
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+console.log(artists[0]);
+console.log(artists[2]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+//My first attempt based off my knowledge, did not work, left as comment for feedback:
+
+//artists[8].splice(1,1,"Vincent Van Gogh");
+
+//My second attempt using a  strategy that I found on google, did not understand it very well seems very complicated just to change one value, and I never
+//understood where I actually put in the new value.  Just left this attempt as a comment to show my attempt and see if I get feedback on this:
+
+/*const changeValue = this.artists.name.findIndex(element => element.name == name );
+let newArray = [...this.artists.name];
+newArray[8] = {...newArray[8], name: !newArray[8].name};
+this.setartists({name= newArray });
+*/
+
+//My third attempt using resources from google, codegrepper.com:
+//After seeing this third attempt did not work, which I really thought it would when I saw how good the code looked, 
+//I decided to move on to task 3 to preserve time for other tasks, left 3rd attempt here for feedback:
+
+artists[8] = artists.findIndex((obj => obj.id == 8));
+artists[8].name = "Vincent Van Gogh";
+console.log(artists[8]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -225,9 +247,16 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
+
+
+function getArtistByIndex(artists, index, name )  {
+  return("The artist at index " + index + "is " + name + ".")
+}
+
+//Note on task 3, I really don't understand quite how to use parameters in functions.  I have googled and seen several resources
+// but the application of what seems a simple concept continues to elude my understanding
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() 
