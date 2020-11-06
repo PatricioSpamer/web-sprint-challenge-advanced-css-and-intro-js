@@ -23,9 +23,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Accessibility is how adaptive your website is to meet the needs of different people trying to use your sight.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    a. You could use colors that are friendly towards color blind people.
+    b. You can make sure the site is available in several languages to accomodate foreigners.
+    c. You can make sure the site is adaptive and will be usable whether on a desktop, mobile device, or tablet.
 3. How would you explain the concept of a variable to someone new to programming?
+    A variable is an object whose value can change.
 4. What is the purpose of using functions in code?
+    Simplifies the code by putting several objects and methods in one function, so you can reuse the function without having to repeat all the code.  Great for DRY coding.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -48,8 +54,9 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
 * [ ] Add a viewport meta tag to the head of your index.html page.
+I added the tag to line 8 of index.html:  <meta name= "viewport" content="width=device-width, initial-scale=1">
 * [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
-
+I added the breakpoint to line 139 of index.css
 ### Task 2b: Minimum Viable Product - JavaScript
 
 Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
